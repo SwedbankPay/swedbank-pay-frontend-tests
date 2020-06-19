@@ -1,0 +1,29 @@
+{
+  "name": "test-sdk",
+  "version": "1.0.0",
+  "description": "library designed to be tool to make tests as a package",
+  "main": "index.js",
+  "scripts": {
+    "start": "protractor .\\dist\\protractor\\local.config.js",
+    "build": "tsc",
+    "buildOnSave": "tsc --watch",
+    "browserstack": "protractor .\\dist\\protractor\\browserstack.config.js",
+    "webdriver-update": "webdriver-manager update",
+    "test": "npm run build && npm start"
+  },
+  "dependencies": {
+    "@types/jasmine": "^3.5.10",
+    "browserstack": "^1.6.0",
+    "dotenv": "^8.2.0",
+    "guid-typescript": "^1.0.9",
+    "jasmine": "^3.5.0",
+    "jasmine-spec-reporter": "^5.0.2",
+    "protractor": "^7.0.0",
+    "swedbank-pay": "1.0.0-alpha.4",
+    "typescript": "^3.9.5",
+    "webdriver-manager": "^12.1.7"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
